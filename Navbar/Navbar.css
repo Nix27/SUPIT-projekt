@@ -1,0 +1,94 @@
+nav{
+    width: 100%;
+    background-color: black;
+    color: white;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+}
+
+ul:nth-of-type(1) li:nth-of-type(1), a{
+    color: white;
+    display: block;
+    padding: 20px 0;
+    margin-left: 30px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul:nth-of-type(1) li:first-child{
+    display: none;
+}
+
+a:hover{
+    cursor: pointer;
+    color: yellow;
+}
+
+ul li:nth-child(2) a i{
+    color: #40ACFC;
+}
+
+nav ul li a i{
+    color: orange;
+}
+
+@media screen and (max-width: 1024px){
+    ul li:not(:nth-child(2), :first-child) a {display: none;}
+    ul:nth-of-type(1) li:first-child{display: block; margin-left: 30px;}
+    ul.responsive{
+    flex-direction: column;
+    }
+
+    ul.responsive li a{
+        display: block;
+    }
+}
+
+/**Tab - O nama, desni menu*/
+ul:nth-of-type(2) li a{
+    color: orange;
+    margin-left: 0;
+    margin-right: 30px;
+}
+
+ul:nth-of-type(2) li:first-child{
+    display: none;
+}
+
+ul:nth-of-type(2) li a:hover{
+    color: yellow;
+}
+
+@media screen and (max-width: 1024px) {
+    ul:nth-of-type(2) li a {display: none;}
+    ul:nth-of-type(2) li:first-child{
+        display: block; 
+        margin-right: 30px; 
+        padding: 20px 0;
+        text-align: right;
+    }
+
+    ul:nth-of-type(2).responsive{
+        flex-direction: column;
+    }
+
+    ul:nth-of-type(2).responsive li a{
+        display: block;
+        text-align: right;
+        margin-right: 30px;
+    }
+}

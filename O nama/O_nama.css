@@ -1,0 +1,113 @@
+:root{
+    --bgwhite: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('../img/kakoDoNas.jpg');
+    background-size: cover;
+}
+
+header{
+    background-color: var(--bgwhite);
+    padding-bottom: 40px;
+}
+
+header > img{
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+}
+
+header > h1{
+    text-align: center;
+    margin: auto;
+    width: 40%;
+    border-bottom: 3px solid orange;
+    padding: 8px 0;
+}
+
+article{
+    background-color: var(--bgwhite);
+    padding-top: 20px;
+}
+
+article h2{
+    color:rgb(200, 47, 98);
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+#nasevrijednosti > p, #povijest > p, #algebragrupa > p{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 50px;
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 1.1em;
+}
+
+#vrijednosti, #razvojpovijest, #postignuca{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding-bottom: 30px;
+}
+
+#vrijednost, #dogadaj{
+    border: 1px solid grey;
+    padding: 10px;
+    color: grey;
+    width: 33%;
+}
+
+#vrijednost h3, #dogadaj h3{
+    text-transform: uppercase;
+    color: black;
+    border-bottom: 1px solid rgb(128, 128, 128, 0.1);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+#vrijednost p, #dogadaj p{
+    font-size: 0.9em;
+}
+
+#plavagodina{
+    color: rgb(49, 135, 228);
+}
+
+#postignuca{
+    gap: 20px 10px;
+}
+
+#postignuce{
+    padding: 10px;
+    color: grey;
+    width: 24%;
+    text-align: center;
+}
+
+#postignuce h4{
+    text-transform: uppercase;
+    color: black;
+    font-size: 0.7em;
+    border-bottom: 1px solid rgb(128, 128, 128, 0.1);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#prvetriimg{
+    width: 25%;
+}
+
+#ostaleimg{
+    width: 80%;
+}
