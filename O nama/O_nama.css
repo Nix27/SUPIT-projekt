@@ -1,20 +1,22 @@
-:root{
-    --bgwhite: white;
-}
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 59px;
+}
+
 body{
     background: url('../img/kakoDoNas.jpg');
     background-size: cover;
+    background-attachment: fixed;
 }
 
 header{
-    background-color: var(--bgwhite);
+    background-color: white;
     padding-bottom: 40px;
 }
 
@@ -33,7 +35,7 @@ header > h1{
 }
 
 article{
-    background-color: var(--bgwhite);
+    background-color: white;
     padding-top: 20px;
 }
 
@@ -64,7 +66,7 @@ article h2{
     border: 1px solid grey;
     padding: 10px;
     color: grey;
-    width: 33%;
+    width: 32%;
 }
 
 #vrijednost h3, #dogadaj h3{
@@ -90,7 +92,7 @@ article h2{
 #postignuce{
     padding: 10px;
     color: grey;
-    width: 24%;
+    width: 23%;
     text-align: center;
 }
 
@@ -110,4 +112,105 @@ article h2{
 
 #ostaleimg{
     width: 80%;
+}
+
+#kakodonas{
+    background-color: transparent;
+    padding-top: 0;
+    margin-bottom: 60px;
+}
+
+#kakodonas h2{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: white;
+    margin-bottom: 70px;
+}
+
+#objasnjenjalokacije{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+#objasnjenje{
+    background-color: white;
+    border: 2px solid grey;
+    width: 47%;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#objasnjenje i{
+    color: rgb(49, 135, 228);
+}
+
+#objasnjenje p{
+    margin: 20px 50px;
+}
+
+#mapa{
+    width: 55%;
+    height: 350px;
+    margin: auto;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+footer{
+    background: url('../img/zaiskri-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+footer p{
+    text-transform: uppercase;
+    font-size: 2.1rem;
+    color: white;
+    font-weight: bold;
+    width: 50%;
+    margin: auto;
+    padding: 40px;
+    line-height: 2em;
+}
+
+footer span{
+    color: rgb(200, 47, 98);
+}
+
+@media screen and (max-width: 768px) {
+    #vrijednost, #dogadaj, #postignuce{
+        width: 48%;
+    }
+
+    #objasnjenje{
+        width: 45%;
+    }
+
+    #objasnjenje p{
+        margin: 20px;
+    }
+
+    footer p{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #vrijednost, #dogadaj, #postignuce, #objasnjenje{
+        width: 100%;
+    }
+
+    footer p{
+        font-size: 0.9em;
+    }
 }
