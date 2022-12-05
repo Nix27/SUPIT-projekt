@@ -57,6 +57,7 @@ article h2{
     width: 70%;
     margin: auto;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 5px;
     padding-bottom: 30px;
