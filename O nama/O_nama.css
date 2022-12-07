@@ -182,6 +182,7 @@ footer p{
     margin: auto;
     padding: 40px;
     line-height: 2em;
+    text-shadow: 1px 1px black;
 }
 
 footer span{
