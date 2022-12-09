@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    overflow: hidden;
+    height: 300px;
+    margin-top: 59px;
+    color: white;
+}
+
+header img{
+    width: 100%;
+    height: -300px;
+    object-fit: cover;
+}
+
+h1{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    border-bottom: 3px solid orange;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+
+main p{
+    width: 60%;
+    margin: auto;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+footer{
+    background: url('../../img/zaiskri-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+footer p{
+    text-transform: uppercase;
+    font-size: 2.1rem;
+    color: white;
+    font-weight: bold;
+    width: 50%;
+    margin: auto;
+    padding: 40px;
+    line-height: 2em;
+    text-shadow: 1px 1px black;
+}
+
+span{
+    color: rgb(200, 47, 98);
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    footer p{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    header{
+        height: 170px;
+    }
+
+    footer p{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 319px){
+    header{
+        height: 100px;
+    }
+
+    main p{
+        font-size: 1em;
+    }
+
+    footer p{
+        font-size: 0.7em;
+    }
+}

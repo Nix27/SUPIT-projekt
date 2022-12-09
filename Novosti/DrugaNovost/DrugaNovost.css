@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background: url('../../img/novost2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 59px;
+}
+
+header p{
+    color: white;
+    font-size: 2.2em;
+    width: 50%;
+    margin: auto;
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px black;
+}
+
+h1{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    border-bottom: 3px solid orange;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    margin-bottom: 50px;
+}
+
+main p{
+    width: 60%;
+    margin: auto;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+footer{
+    background: url('../../img/zaiskri-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+footer p{
+    text-transform: uppercase;
+    font-size: 2.1rem;
+    color: white;
+    font-weight: bold;
+    width: 50%;
+    margin: auto;
+    padding: 40px;
+    line-height: 2em;
+    text-shadow: 1px 1px black;
+}
+
+span{
+    color: rgb(200, 47, 98);
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    header p{
+        font-size: 1.5em;
+    }
+
+    footer p{
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    header{
+        background-size: contain;
+        height: 150px;
+    }
+
+    header p{
+        font-size: 1em;
+    }
+
+    footer p{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 319px){
+    header{
+        background-size: contain;
+        height: 100px;
+    }
+
+    header p{
+        font-size: 0.7em;
+    }
+
+    main p{
+        font-size: 1em;
+    }
+
+    footer p{
+        font-size: 0.7em;
+    }
+}
