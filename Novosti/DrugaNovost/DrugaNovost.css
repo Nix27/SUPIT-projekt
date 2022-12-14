@@ -9,6 +9,7 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     height: 300px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,7 +65,25 @@ span{
     color: rgb(200, 47, 98);
 }
 
+@media screen and (min-height: 1080px){
+    footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    footer p{
+        font-size: 1.5em;
+    }
+}
+
 @media screen and (min-width: 481px) and (max-width: 768px){
+    header{
+        height: 200px;
+    }
+
     header p{
         font-size: 1.5em;
     }
@@ -74,9 +93,8 @@ span{
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px){
+@media screen and (min-width: 371px) and (max-width: 480px){
     header{
-        background-size: contain;
         height: 150px;
     }
 
@@ -89,9 +107,8 @@ span{
     }
 }
 
-@media screen and (max-width: 319px){
+@media screen and (max-width: 370px){
     header{
-        background-size: contain;
         height: 100px;
     }
 

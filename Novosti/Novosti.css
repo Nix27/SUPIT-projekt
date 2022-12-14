@@ -4,14 +4,8 @@
     box-sizing: border-box;
 }
 
-body{
-    display:flex; 
-    flex-direction:column;
-    min-height: 100vh;
-} 
-
 main{
-    padding-top: 59px;
+    margin-top: 59px;
     margin-bottom: 40px;
 }
 
@@ -76,10 +70,9 @@ footer{
     background-size: cover;
     background-position: center;
     text-align: center;
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    flex: 1;
-    display: flex;
-    align-items: center;
 }
 
 footer p{
@@ -105,6 +98,10 @@ footer span{
 }
 
 @media screen and (max-width: 768px){
+    footer{
+        position: static;
+    }
+
     footer p{
         font-size: 1.5rem;
     }
@@ -113,6 +110,32 @@ footer span{
 @media screen and (max-width: 480px){
     footer p{
         font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 390px){
+    #novost{
+        width: 170px;
+        height: 170px;
+    }
+
+    #novost a{
+        font-size: 0.5em;
+    }
+
+    #novost img{
+        border: 10px solid rgb(241, 241, 241);
+    }
+
+    footer p{
+        font-size: 0.7em;
+    }
+}
+
+/** za nest hub  */
+@media screen and (width: 1024px) and (height: 600px){
+    footer{
+        position: static;
     }
 }
 

@@ -5,16 +5,15 @@
 }
 
 header{
-    overflow: hidden;
+    background: url('../../img/novost3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 300px;
-    margin-top: 59px;
-    color: white;
-}
-
-header img{
     width: 100%;
-    height: -300px;
-    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 59px;
 }
 
 h1{
@@ -57,7 +56,19 @@ span{
     color: rgb(200, 47, 98);
 }
 
+@media screen and (min-height: 1080px){
+    footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
 @media screen and (min-width: 481px) and (max-width: 768px){
+    header{
+        background-position: center;
+    }
+
     footer p{
         font-size: 1.5em;
     }
@@ -66,6 +77,7 @@ span{
 @media screen and (min-width: 320px) and (max-width: 480px){
     header{
         height: 170px;
+        background-position: center;
     }
 
     footer p{

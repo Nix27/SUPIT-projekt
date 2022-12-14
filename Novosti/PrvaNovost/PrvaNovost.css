@@ -5,25 +5,22 @@
 }
 
 header{
-    overflow: hidden;
-    height: 350px;
-    padding-top: 59px;
-    color: white;
-}
-
-header img{
-    width: 100%;
-    height: -300px;
-    object-fit: cover;
+    background: url('../../img/novost1.jpg');
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
 }
 
 header p{
-    position: absolute;
-    top: 20%;
-    left: 30%;
-    font-size: 2.8em;
-    font-weight: bold;
+    color: white;
+    font-size: 2.2em;
     width: 50%;
+    margin: auto;
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px black;
 }
 
 h1{
@@ -116,7 +113,6 @@ span{
 @media screen and (min-width: 1025px) and (max-width: 1200px){
     header p{
         font-size: 2em;
-        top: 10%;
     }
 
     footer p{
@@ -127,7 +123,6 @@ span{
 @media screen and (min-width: 769px) and (max-width: 1024px){
     header p{
         font-size: 2em;
-        top: 10%;
     }
 
     #slike{
@@ -150,7 +145,6 @@ span{
 
     header p{
         font-size: 1.5em;
-        top: 13%;
     }
 
     main p{
@@ -173,11 +167,11 @@ span{
 @media screen and (min-width: 320px) and (max-width: 480px){
     header{
         height: 200px;
+        background-position: center;
     }
 
     header p{
         font-size: 1em;
-        top: 10%;
     }
 
     #slike{
@@ -201,6 +195,7 @@ span{
 @media screen and (max-width: 319px){
     header{
         height: 200px;
+        background-position: center;
     }
 
     header p{
