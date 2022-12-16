@@ -9,7 +9,7 @@ main{
     margin-bottom: 40px;
 }
 
-h1{
+main > h1{
     width: 50%;
     border-bottom: 3px solid orange;
     margin: auto;

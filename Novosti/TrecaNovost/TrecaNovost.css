@@ -16,7 +16,7 @@ header{
     margin-top: 59px;
 }
 
-h1{
+main > h1{
     text-align: center;
     width: 50%;
     margin: auto;
