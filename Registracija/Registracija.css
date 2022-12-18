@@ -11,12 +11,12 @@ main{
     height: 80vh;
 }
 
-h2{
+h4{
     text-transform: uppercase;
     margin-bottom: 30px;
 }
 
-#prijava{
+#registracija{
     width: 20%;
     padding: 5px;
 }
@@ -27,7 +27,7 @@ input[type="email"], input[type="password"]{
     margin-bottom: 15px;
 }
 
-#prijava input[type="submit"]{
+#registracija input[type="submit"]{
     width: 100%;
     border: 0;
     color: white;
@@ -43,17 +43,6 @@ label{
 
 form{
     margin-bottom: 10px;
-}
-
-#prijava a{
-    display: inline;
-    margin-left: 0;
-    color: rgb(55, 151, 229);
-    font-family: sans-serif;
-}
-
-#prijava a:hover{
-    opacity: 0.5;
 }
 
 footer{
@@ -80,13 +69,13 @@ footer span{
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px){
-    #prijava{
+    #registracija{
         width: 70%;
     }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px){
-    #prijava{
+    #registracija{
         width: 80%;
     }
 
@@ -102,7 +91,7 @@ footer span{
 }
 
 @media screen and (max-width: 480px){
-    #prijava{
+    #registracija{
         width: 50%;
     }
 

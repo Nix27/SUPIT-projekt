@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="icon" href="../img/Algebra-logo.png">
     <link rel="stylesheet" href="../Navbar/Navbar.css">
-    <link rel="stylesheet" href="Prijava.css">
+    <link rel="stylesheet" href="Registracija.css">
     <link rel="stylesheet" href="../Kontakt/Kontakt.css">
     <script src="../Navbar/Navbar.js"></script>
     <script src="https://kit.fontawesome.com/1579cdd6ee.js" crossorigin="anonymous"></script>
@@ -18,7 +18,7 @@
     <nav>
         <ul id="menu">
             <li onclick="ShowMenu('menu')"><i class="fa-solid fa-bars"></i></li>
-            <li><a href="#">Prijavi se <i class="fa-solid fa-right-from-bracket"></i></a></li>
+            <li><a href="../Prijava/Prijava.html">Prijavi se <i class="fa-solid fa-right-from-bracket"></i></a></li>
             <li><a href="../Početna/Početna.html"><i class="fa-solid fa-house"></i> Početna</a></li>
             <li><a href="../O nama/O_nama.html"><i class="fa-solid fa-comments"></i> O nama</a></li>
             <li><a href="../Novosti/Novosti.html"><i class="fa-solid fa-circle-info"></i> Novosti</a></li>
@@ -26,16 +26,15 @@
         </ul>
     </nav>
     <main>
-        <div id="prijava">
-            <h2>PRIJAVA KORISNIKA</h2>
-            <form action="https://www.fulek.com/data/api/user/login" method="post">
+        <div id="registracija">
+            <h4>REGISTRACIJA KORISNIKA</h4>
+            <form action="https://www.fulek.com/data/api/user/register" method="post">
                 <label for="username">Korisničko ime</label><br>
                 <input type="email" id="username" name="username" autocomplete="on" required><br>
                 <label for="password">Lozinka</label><br>
                 <input type="password" id="password" name="password" autocomplete="on" required><br>
-                <input type="submit" value="Prijavi se">
+                <input type="submit" value="Registriraj se">
             </form>
-            <span>Nemaš račun? <a href="../Registracija/Registracija.html">Registriraj se</a></span>
         </div>
         <div id="bgKontakt">
             <div id="kontakt">

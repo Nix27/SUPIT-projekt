@@ -65,7 +65,15 @@ span{
     color: rgb(200, 47, 98);
 }
 
-@media screen and (min-height: 1080px){
+@media screen and (min-height: 1300px){
+    footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1400px) and (min-height: 1080px){
     footer{
         position: fixed;
         bottom: 0;
