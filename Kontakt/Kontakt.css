@@ -25,14 +25,14 @@ h1{
     transform: translate(-50%, -50%);
 }
 
-input[type="text"], input[type="email"], textarea, select{
+ #kontakt input[type="text"], #kontakt input[type="email"], textarea, select{
     width: 100%;
     margin-top: 5px;
     margin-bottom: 10px;
     border: 1px solid rgba(169, 168, 168, 0.5);
 }
 
-input[type="text"], input[type="email"], select{
+#kontakt input[type="text"], #kontakt input[type="email"], select{
     height: 30px;
     padding-left: 5px;
 }
@@ -42,7 +42,7 @@ textarea{
     padding-left: 5px;
 }
 
-label:last-of-type{
+#kontakt label:last-of-type{
     margin-bottom: 20px;
     font-weight: bold;
 }

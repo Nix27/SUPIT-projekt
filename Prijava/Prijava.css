@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+h2{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+#prijava{
+    width: 20%;
+    padding: 5px;
+}
+
+input[type="email"], input[type="password"]{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+#prijava input[type="submit"]{
+    width: 100%;
+    border: 0;
+    color: white;
+    background-color: rgb(62, 62, 62);
+    border-radius: 5px;
+    padding: 5px 0;
+} 
+
+label{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+form{
+    margin-bottom: 10px;
+}
+
+#prijava a{
+    display: inline;
+    margin-left: 0;
+    color: rgb(55, 151, 229);
+    font-family: sans-serif;
+}
+
+#prijava a:hover{
+    opacity: 0.5;
+}
+
+footer{
+    background: url('../img/zaiskri-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+footer p{
+    text-transform: uppercase;
+    font-size: 2.1rem;
+    color: white;
+    font-weight: bold;
+    width: 50%;
+    margin: auto;
+    padding: 40px;
+    line-height: 2em;
+    text-shadow: 1px 1px black;
+}
+
+footer span{
+    color: rgb(200, 47, 98);
+}
+
+@media screen and (max-width: 480px){
+    #prijava{
+        width: 80%;
+    }
+
+    footer p{
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #prijava{
+        width: 50%;
+    }
+
+    footer p{
+        font-size: 1em;
+    }
+}
