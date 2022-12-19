@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main > h1{
+    margin-top: 59px;
+}
+
+h1{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    border-bottom: 3px solid orange;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
