@@ -15,4 +15,122 @@ h1{
     border-bottom: 3px solid orange;
     padding-top: 20px;
     padding-bottom: 15px;
+    margin-bottom: 100px;
+}
+
+#content{
+    width: 70%;
+    display: flex;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#subcontent{
+    width: 48%;
+}
+
+label{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer{
+    background: url('../img/zaiskri-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p{
+    text-transform: uppercase;
+    font-size: 2.1rem;
+    color: white;
+    font-weight: bold;
+    width: 50%;
+    margin: auto;
+    padding: 40px;
+    line-height: 2em;
+    text-shadow: 1px 1px black;
+}
+
+footer span{
+    color: rgb(200, 47, 98);
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    h1{
+        margin-bottom: 50px;
+    }
+
+    #content{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #subcontent{
+        width: 100%;
+    }
+
+    footer p{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    h1{
+        margin-bottom: 50px;
+    }
+
+    #content{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #subcontent{
+        width: 100%;
+    }
+
+    footer p{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 319px){
+    h1{
+        margin-bottom: 30px;
+    }
+
+    #content{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #subcontent{
+        width: 100%;
+    }
+
+    input[type="text"]{
+        width: 100%;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    footer p{
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (width: 1024px) and (height: 600px){
+    h1{
+        margin-bottom: 30px;
+    }
 }
