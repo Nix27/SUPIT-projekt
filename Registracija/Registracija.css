@@ -27,7 +27,7 @@ input[type="email"], input[type="password"]{
     margin-bottom: 15px;
 }
 
-#registracija input[type="button"]{
+#registracija input[type="submit"]{
     width: 100%;
     border: 0;
     color: white;

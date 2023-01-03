@@ -1,22 +1,24 @@
+window.onload = () => {
+  const forma = document.getElementsByTagName('form')[0];
 
+  forma.addEventListener('submit', event => {
+    event.preventDefault();
 
-function RegistrirajSe(){
-    clickLogin = (e) => {
-        e.preventDefault();
-        fetch ('https://www.fulek.com/data/api/user/register', {
-           method: 'POST',
-           body: JSON.stringify({
-             username: this.state.idValue,
-             password: this.state.pwValue
-          }),
-      }).then((response) => response.json())
-        .then((result) => {
-          if(result.message === 'SUCCESS'){
-            alert('You are logged in.');
-            this.goToMain();
-           } else {
-               alert('Please check your login information.');
-           }
-        });
-      }
+    const formData = new FormData(forma);
+    const data = Object.fromEntries(formData);
+
+    fetch('https://www.fulek.com/data/api/user/register', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    }).then(res => res.json())
+      .then(data => console.log(data))
+      .catch(err => console.log(err))
+  });
 }
+
+
+
+
