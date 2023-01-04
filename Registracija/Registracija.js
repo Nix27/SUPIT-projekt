@@ -13,11 +13,15 @@ window.onload = () => {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(data)
-    }).then(res => res.json())
-      .then(data => console.log(data))
-      .catch(err => console.log(err))
+    }).then(response => {
+      if (response.status === 200) {
+        window.location.href = '../Prijava/Prijava.html';
+      }else{
+        alert('Error');
+      }
+    }).catch(err => console.log(err))
   });
-}
+};
 
 
 
