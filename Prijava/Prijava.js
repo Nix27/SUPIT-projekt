@@ -1,3 +1,5 @@
+sessionStorage.setItem('uspijesnaPrijava', false);
+
 window.onload = () => {
     const forma = document.getElementsByTagName('form')[0];
     let pElement = document.createElement('p');
@@ -17,15 +19,11 @@ window.onload = () => {
         }).then(response => response.json())
           .then(data => {
             if(data.statusCode === 200) {
-                
+                sessionStorage.setItem('uspijesnaPrijava', true);
                 Poruka('Uspješna prijava :) Na početnu stranicu za 3,2,1...', forma, pElement);
                 setTimeout(() => {
                     window.location.href = '../Početna/Početna.html';
                 }, 3000);
-
-                setTimeout(() => {
-                    IzmijeniNavbar();
-                }, 4000);
             }else{
                 Poruka('User not found', forma, pElement);
             }

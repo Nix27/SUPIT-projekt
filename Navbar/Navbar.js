@@ -6,9 +6,12 @@ function ShowMenu(id){
         x.className = "ul";
 }
 
-function IzmijeniNavbar(){
-    var liElement = document.getElementsByTagName('li')[1];
-    console.log(liElement);
-}
+window.onload = () => {
+    if(sessionStorage.getItem('uspijesnaPrijava') === 'true'){
+        let liElement = document.getElementsByTagName('li')[1];
+        console.log(liElement);
+    }
+};
+
 
 
