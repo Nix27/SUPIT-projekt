@@ -6,4 +6,9 @@ function ShowMenu(id){
         x.className = "ul";
 }
 
+function IzmijeniNavbar(){
+    var liElement = document.getElementsByTagName('li')[1];
+    console.log(liElement);
+}
+
 
