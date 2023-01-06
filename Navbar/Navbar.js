@@ -6,12 +6,24 @@ function ShowMenu(id){
         x.className = "ul";
 }
 
-window.onload = () => {
+$(() => {
+    const nastavniPlan = document.getElementsByTagName('li')[5];
+    nastavniPlan.style.display = 'none';
+
     if(sessionStorage.getItem('uspijesnaPrijava') === 'true'){
-        let liElement = document.getElementsByTagName('li')[1];
-        console.log(liElement);
+        let liElement = $('li')[1];
+        $(liElement).empty();
+        $(liElement).append(`<a href="#"><i class="fa-solid fa-arrow-left"></i> odjavi <span>${sessionStorage.getItem('username')}</span></a>`);
+        document.getElementsByTagName('span')[0].style.color = '#40ACFC';
+
+        nastavniPlan.style.display = 'block';
+
+        $(liElement).on('click', () => {
+            sessionStorage.setItem('uspijesnaPrijava', false);
+            location.reload();
+        });
     }
-};
+});
 
 
 

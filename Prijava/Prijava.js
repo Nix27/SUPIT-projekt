@@ -1,10 +1,10 @@
 sessionStorage.setItem('uspijesnaPrijava', false);
 
-window.onload = () => {
-    const forma = document.getElementsByTagName('form')[0];
+$(() => {
+    const forma = $('form')[0];
     let pElement = document.createElement('p');
     
-    forma.addEventListener('submit', event => {
+    $(forma).on('submit', event => {
         event.preventDefault();
 
         const formData = new FormData(forma);
@@ -20,6 +20,7 @@ window.onload = () => {
           .then(data => {
             if(data.statusCode === 200) {
                 sessionStorage.setItem('uspijesnaPrijava', true);
+                sessionStorage.setItem('username', data.data.username);
                 Poruka('Uspješna prijava :) Na početnu stranicu za 3,2,1...', forma, pElement);
                 setTimeout(() => {
                     window.location.href = '../Početna/Početna.html';
@@ -30,7 +31,7 @@ window.onload = () => {
         })
         .catch(error => console.log(error));
     });
-};
+});
 
 function Poruka(msg, forma, pelement){
     pelement.innerHTML = msg;
