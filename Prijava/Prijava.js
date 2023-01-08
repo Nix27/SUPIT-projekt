@@ -1,4 +1,6 @@
 sessionStorage.setItem('uspijesnaPrijava', false);
+sessionStorage.setItem('username', null);
+sessionStorage.setItem('token', null);
 
 $(() => {
     const forma = $('form')[0];
@@ -21,6 +23,7 @@ $(() => {
             if(data.statusCode === 200) {
                 sessionStorage.setItem('uspijesnaPrijava', true);
                 sessionStorage.setItem('username', data.data.username);
+                sessionStorage.setItem('token', data.data.token);
                 Poruka('Uspješna prijava :) Na početnu stranicu za 3,2,1...', forma, pElement);
                 setTimeout(() => {
                     window.location.href = '../Početna/Početna.html';
