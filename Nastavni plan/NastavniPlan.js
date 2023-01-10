@@ -23,7 +23,25 @@ $(() => {
             ucitajKolegije().then(data => {
                 const filteredData = data.filter((item) => item.kolegij === ui.item.label);
                 const kolegij = filteredData.map((item) => item);
-                $('table').append(`<tr><td>${kolegij[0].kolegij}</td><td>${kolegij[0].ects}</td><td>${kolegij[0].sati}</td><td>${kolegij[0].predavanja}</td><td>${kolegij[0].vjezbe}</td><td>${kolegij[0].tip}</td><td><input type='button' value='Delete' class='btn btn-danger' onclick='ObrisiOvajRed(this.parentNode.parentNode)'></td></tr>`);
+                $('table').append(`<tr><td>${kolegij[0].kolegij}</td><td>${kolegij[0].ects}</td><td>${kolegij[0].sati}</td><td>${kolegij[0].predavanja}</td><td>${kolegij[0].vjezbe}</td><td>${kolegij[0].tip}</td><td><button type='button' class='btn btn-danger'>Delete</button></td></tr>`);
+                
+                //dodaje click event zadnjem dodanom button-u
+                $('button').slice(-1).on('click', function (){
+                    const tr = $(this).parent().parent();
+                    const index = $(tr).index() - 1;
+                    ukupno.forEach(value => {
+                        value.splice(index, 1);
+                    });
+                    $(tr).remove();
+                    if(Sum(ects) != 0){
+                        $('tfoot').remove();
+                        $('table').append(`<tfoot><tr><td>Ukupno</td><td>${Sum(ects)}</td><td>${Sum(sati)}</td><td>${Sum(predavanja)}</td><td>${Sum(vjezbe)}</td></tr></tfoot>`);
+                    }else{
+                        $('tr')[0].remove();
+                        $('tfoot').remove();
+                        zaglavlje = true;
+                    }
+                });
 
                 UpdateUkupnoNakonSelect(ukupno, kolegij);
                 $('tfoot').remove();
@@ -60,14 +78,5 @@ function Sum(arr){
 
     return sum;
 };
-
-function ObrisiOvajRed(tr){
-    $(tr).remove();
-};
-
-function UpdateUkupnoNakonDelete(){
-    $('tfoot').remove();
-    $('table').append(`<tfoot><tr><td>Ukupno</td><td>${Sum(ects)}</td><td>${Sum(sati)}</td><td>${Sum(predavanja)}</td><td>${Sum(vjezbe)}</td></tr></tfoot>`);
-}
 
 
