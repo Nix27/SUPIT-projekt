@@ -21,7 +21,7 @@ $(() => {
         $(liElement).on('click', () => {
             sessionStorage.setItem('uspijesnaPrijava', false);
             sessionStorage.setItem('token', null);
-            location.reload();
+            window.location.href = '../Početna/Početna.html';
         });
     }
 });

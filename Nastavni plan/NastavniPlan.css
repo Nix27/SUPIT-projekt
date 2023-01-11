@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+main{
+    min-height: 75vh;
+}
+
 main > h1{
     margin-top: 59px;
 }
@@ -19,8 +23,9 @@ h1{
 }
 
 #content{
-    width: 70%;
+    width: 80%;
     display: flex;
+    column-gap: 50px;
     margin: auto;
     margin-bottom: 30px;
 }
@@ -45,9 +50,7 @@ footer{
     background-size: cover;
     background-position: center;
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    width: 100vw;
 }
 
 footer p{
@@ -66,7 +69,53 @@ footer span{
     color: rgb(200, 47, 98);
 }
 
+table{
+    width: 100%;
+}
+
+tr{
+    border-top: 1px solid #C9C9C9;
+}
+
+th, td{
+    text-align: center;
+    padding: 5px;
+}
+
+tfoot{
+    border-top: 4px solid black;
+    font-weight: bold;
+}
+
+th:first-of-type, th:last-of-type, td:first-of-type{
+    text-align: left;
+}
+
+tfoot tr td:first-of-type{
+    text-align: right;
+}
+
+tr:nth-child(even){
+    background-color: #E8E8E8;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    #subcontent{
+        width: 100%;
+    }
+
+    #content{
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 50px;
+    }
+}
+
 @media screen and (min-width: 481px) and (max-width: 768px){
+    main{
+        min-height: 80vh;
+    }
+
     h1{
         margin-bottom: 50px;
     }
@@ -74,6 +123,7 @@ footer span{
     #content{
         flex-direction: column;
         justify-content: center;
+        row-gap: 50px;
     }
 
     #subcontent{
@@ -93,6 +143,7 @@ footer span{
     #content{
         flex-direction: column;
         justify-content: center;
+        row-gap: 50px;
     }
 
     #subcontent{
@@ -101,6 +152,10 @@ footer span{
 
     footer p{
         font-size: 0.9rem;
+    }
+
+    table{
+        font-size: 0.8em;
     }
 }
 
@@ -112,6 +167,7 @@ footer span{
     #content{
         flex-direction: column;
         justify-content: center;
+        row-gap: 50px;
     }
 
     #subcontent{
@@ -126,6 +182,10 @@ footer span{
 
     footer p{
         font-size: 0.7rem;
+    }
+
+    table{
+        font-size: 0.8em;
     }
 }
 
