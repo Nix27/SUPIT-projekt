@@ -63,6 +63,10 @@ article h2{
     font-size: 1.1em;
 }
 
+#nasevrijednosti > p{
+    opacity: 0;
+}
+
 #vrijednosti, #razvojpovijest, #postignuca{
     width: 70%;
     margin: auto;

@@ -12,6 +12,16 @@ header{
     justify-content: center;
     align-items: center;
     margin-top: 55px;
+    animation: fadeDown 1s ease-in both;
+}
+
+@keyframes fadeDown {
+	from {
+		transform: translate3d(0, -100%, 0);
+	}
+	to {
+		transform: translate3d(0, 0, 0);
+	}
 }
 
 header p{
@@ -30,7 +40,8 @@ main > h1{
     padding-bottom: 20px;
     text-align: center;
     border-bottom: 3px solid orange;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 0;
 }
 
 main p{

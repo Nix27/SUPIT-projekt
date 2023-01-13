@@ -19,6 +19,16 @@ h2{
 #prijava{
     width: 20%;
     padding: 5px;
+    animation: fadeIn 0.5s ease-in both;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 input[type="email"], input[type="password"]{
